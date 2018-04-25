@@ -18,7 +18,7 @@ var tweetThis = function(){
         count: 20};
     client.get("statuses/user_timeline", params, function (error,tweets,response) {
         if(!error){
-            console.log(tweets);
+            // console.log(tweets);
             for(var i=0; i<tweets.length; i++) {
                 console.log(tweets[i].created_at);
                 console.log(' ');
